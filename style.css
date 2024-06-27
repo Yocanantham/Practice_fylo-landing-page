@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* -> CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* // CSS reset */
+
+/* -> CSS utility classes */
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+img, input, a {
+    display: block;
+    font-family: "Raleway", sans-serif;
+}
+.A p, .B p {
+    color: hsl(243, 87%, 12%);
+    font-weight: 500;
+}
+input[type="button"] {
+    padding: 0.5rem 3rem;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 700;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
+}
+input[type="button"]:hover {
+    opacity: 0.65;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+/* // CSS utility classes */
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-width: 375px;
+}
+
+
+/* ! Header */
+
+header {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.header_flex {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: hsl(243, 87%, 12%);
+}
+.header_flex:hover {
+    cursor: pointer;
+}
+
+
+/* ! A */
+
+.A {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+.A > .summary {
+    padding: 1rem;
+    flex: 1 1 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.A > img {
+    flex: 1 1 375px;
+    max-width: 600px;
+    width: 100%;
+}
+.get_started_A {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.get_started_A > input[type="email"] {
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+.get_started_A > input:first-child {
+    flex-grow: 3;
+}
+.get_started_A > input:last-child {
+    flex-grow: 1;
+}
+
+
+/* ! .B */
+
+.B {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    background: url('images/bg-curve-desktop.svg') no-repeat ;
+    background-position: bottom 0px center;
+    background-size: 500% 100%;
+}
+.B > .summary {
+    padding: 1rem;
+    flex: 1 1 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.B > img {
+    flex: 1 1 375px;
+    max-width: 600px;
+    width: 100%;
+}
+a {
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 3px;
+    transition: font-weight 0.3s ease, border-bottom 0.3s ease, letter-spacing 0.3s ease;
+}
+a:hover {
+    font-weight: 700;
+    border-bottom: 3px solid hsl(170, 45%, 43%);
+    letter-spacing: 3px;
+}
+.card {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 15px hsl(0, 0%, 75%);
+    border-radius: 5px;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    text-align: initial;
+    gap: 1rem;
+}
+.card > img {
+    width: 15px;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: unset;
+    gap: 1rem;
+}
+.about > img {
+    width: 50px;
+    border-radius: 50%;
+}
+.about_user > p:first-child{
+    font-weight: 800;
+}
+.summary > p, .card > p {
+    font-weight: 550;
+}
+
+/* ! Mail */
+
+.mail {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    gap: 1.5rem;
+    background-color: hsl(238, 22%, 44%);
+}
+.flex_column {
+    flex: 1 1 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    color: hsl(0, 0%, 75%);
+}
+.flex_column > h1 {
+    color: white;
+}
+.get_started_B {
+    flex: 1 1 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.get_started_B > input:last-child {
+    max-width: 400px;
+}
+.get_started_B > input[type="email"] {
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+
+/* ! Footer */
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(0, 0%, 75%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+.footer_summary {
+    flex: 0 1 235px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.footer_grid {
+    flex: 1 1 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    grid-auto-rows: 50px;
+    place-items: center;
+    transition: color 0.3s ease;
+}
+.social {
+    flex: 1 1 135px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.footer_grid > p:hover {
+    color: hsl(224, 93%, 58%);
+    cursor: pointer;
+}
+.white {
+    background-color: white;
+    mask-image: url('images/logo.svg')
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1094px) {
+    footer {
+        padding: 3rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+.A > .summary, .B > .summary, .mail {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .get_started_A {
+        justify-content: center;
+    }
+    .get_started_B > input:last-child {
+        max-width: unset;
+    }
+    .card, a {
+        align-self: center;
+    }
+    .footer_grid {
+        place-items: center left;
+        column-gap: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .A, .B {
+        padding: 1rem;
+    }
+    header > img {
+        width: 100px;
+    }
+    .header_flex {
+        gap: 1rem;
+    }
+    .B {
+        background: url('images/bg-curve-mobile.svg') no-repeat ;
+    background-position: bottom 0px center;
+    background-size: 500% 100%;
+    padding-top: 5rem;
+    }
+}
