@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* -> CSS reset */
 
@@ -17,11 +16,14 @@ h1 {
     font-family: "Raleway", sans-serif;
     color: hsl(243, 87%, 12%);
 }
-img, input, a {
+img,
+input,
+a {
     display: block;
     font-family: "Raleway", sans-serif;
 }
-.A p, .B p {
+.A p,
+.B p {
     color: hsl(243, 87%, 12%);
     font-weight: 500;
 }
@@ -41,13 +43,10 @@ input[type="button"]:hover {
 }
 /* // CSS utility classes */
 
-
-
 body {
     font-family: "Open Sans", sans-serif;
     min-width: 375px;
 }
-
 
 /* ! Header */
 
@@ -74,7 +73,6 @@ header {
 .header_flex:hover {
     cursor: pointer;
 }
-
 
 /* ! A */
 
@@ -120,7 +118,6 @@ header {
     flex-grow: 1;
 }
 
-
 /* ! .B */
 
 .B {
@@ -131,7 +128,7 @@ header {
     align-items: center;
     padding: 3rem;
     gap: 1rem;
-    background: url('images/bg-curve-desktop.svg') no-repeat ;
+    background: url("images/bg-curve-desktop.svg") no-repeat;
     background-position: bottom 0px center;
     background-size: 500% 100%;
 }
@@ -158,7 +155,8 @@ a {
     color: hsl(170, 45%, 43%);
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding-bottom: 3px;
-    transition: font-weight 0.3s ease, border-bottom 0.3s ease, letter-spacing 0.3s ease;
+    transition: font-weight 0.3s ease, border-bottom 0.3s ease,
+        letter-spacing 0.3s ease;
 }
 a:hover {
     font-weight: 700;
@@ -192,10 +190,11 @@ a:hover {
     width: 50px;
     border-radius: 50%;
 }
-.about_user > p:first-child{
+.about_user > p:first-child {
     font-weight: 800;
 }
-.summary > p, .card > p {
+.summary > p,
+.card > p {
     font-weight: 550;
 }
 
@@ -234,7 +233,6 @@ a:hover {
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
-
 
 /* ! Footer */
 
@@ -285,17 +283,8 @@ footer {
 }
 .white {
     background-color: white;
-    mask-image: url('images/logo.svg')
+    mask-image: url("images/logo.svg");
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1094px) {
     footer {
@@ -303,7 +292,9 @@ footer {
         flex-wrap: wrap;
         gap: 1rem;
     }
-.A > .summary, .B > .summary, .mail {
+    .A > .summary,
+    .B > .summary,
+    .mail {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -314,7 +305,8 @@ footer {
     .get_started_B > input:last-child {
         max-width: unset;
     }
-    .card, a {
+    .card,
+    a {
         align-self: center;
     }
     .footer_grid {
@@ -323,7 +315,8 @@ footer {
     }
 }
 @media screen and (max-width: 500px) {
-    .A, .B {
+    .A,
+    .B {
         padding: 1rem;
     }
     header > img {
@@ -333,9 +326,9 @@ footer {
         gap: 1rem;
     }
     .B {
-        background: url('images/bg-curve-mobile.svg') no-repeat ;
-    background-position: bottom 0px center;
-    background-size: 500% 100%;
-    padding-top: 5rem;
+        background: url("images/bg-curve-mobile.svg") no-repeat;
+        background-position: bottom 0px center;
+        background-size: 500% 100%;
+        padding-top: 5rem;
     }
 }
